@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-python3 main.py
+gunicorn app:app --workers 1 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8080
+
