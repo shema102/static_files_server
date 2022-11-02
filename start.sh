@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-uvicorn main:app
+python3 main.py
